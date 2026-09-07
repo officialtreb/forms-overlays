@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brief & Términos de Servicio - Comisiones Stream Overlays</title>
+<style>
+  :root {
+    --primary: #008080;
+    --primary-dark: #005b5c;
+    --primary-darker: #003838;
+    --bg-light: #f8fafc;
+    --card-bg: #ffffff;
+    --text-color: #0f172a;
+    --border-color: #cbd5e1;
+  }
+
+  * {
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+  body {
+    background-color: var(--bg-light);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 30px auto;
+    background: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    overflow: hidden;
+  }
+
+  /* Header Banner */
+  .header-banner {
+    background-color: var(--primary-dark);
+    color: #ffffff;
+    padding: 30px 25px;
+    border-bottom: 5px solid var(--primary-darker);
+  }
+
+  .header-banner h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+    letter-spacing: -0.3px;
+  }
+
+  .header-banner p {
+    font-size: 13px;
+    margin: 0;
+    color: #ccecec;
+  }
+
+  .form-body {
+    padding: 25px;
+  }
+
+  /* Instructions Callout */
+  .instructions-box {
+    background-color: #e6f2f2;
+    border: 1px solid #b2d8d8;
+    border-left: 4px solid var(--primary);
+    padding: 12px 16px;
+    font-size: 13px;
+    color: var(--primary-darker);
+    margin-bottom: 24px;
+    border-radius: 4px;
+  }
+
+  /* Section Titles */
+  h2 {
+    color: #ffffff;
+    background-color: var(--primary-dark);
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 24px 0 14px 0;
+    padding: 8px 12px;
+    border-left: 5px solid var(--primary-darker);
+    border-radius: 2px;
+  }
+
+  /* Tables & Inputs */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 18px;
+    font-size: 13px;
+  }
+
+  th, td {
+    padding: 8px 10px;
+    text-align: left;
+    vertical-align: middle;
+    border: 1px solid var(--border-color);
+  }
+
+  th {
+    background-color: var(--primary);
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  tr:nth-child(even) td {
+    background-color: #f1f7f7;
+  }
+
+  input[type="text"], input[type="url"], input[type="date"], textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 13px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  input[type="text"]:focus, input[type="url"]:focus, input[type="date"]:focus, textarea:focus {
+    border-color: var(--primary);
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 60px;
+  }
+
+  /* Checkboxes */
+  .checkbox-group {
+    background-color: #ffffff;
+    border: 1px solid var(--border-color);
+    padding: 12px 16px;
+    margin-bottom: 18px;
+    border-radius: 4px;
+  }
+
+  .checkbox-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 13px;
+    margin-bottom: 10px;
+    color: #1e293b;
+    cursor: pointer;
+  }
+
+  .checkbox-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .checkbox-item input[type="checkbox"], .checkbox-item input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--primary);
+    cursor: pointer;
+    margin-top: 2px;
+  }
+
+  /* Terms Box */
+  .terms-box {
+    background-color: #ffffff;
+    border: 1px solid var(--border-color);
+    border-left: 4px solid var(--primary);
+    padding: 14px;
+    margin-top: 14px;
+    border-radius: 4px;
+  }
+
+  .terms-list {
+    margin: 0;
+    padding-left: 18px;
+  }
+
+  .terms-list li {
+    font-size: 12px;
+    color: #334155;
+    margin-bottom: 8px;
+    line-height: 1.4;
+  }
+
+  .terms-list li strong {
+    color: var(--primary-dark);
+  }
+
+  /* Submit Button */
+  .submit-btn {
+    display: block;
+    width: 100%;
+    background-color: var(--primary);
+    color: #ffffff;
+    border: none;
+    padding: 14px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: background-color 0.2s, transform 0.1s;
+  }
+
+  .submit-btn:hover {
+    background-color: var(--primary-dark);
+  }
+
+  .submit-btn:active {
+    transform: scale(0.99);
+  }
+
+  @media (max-width: 600px) {
+    .container { margin: 10px; }
+    th, td { font-size: 12px; padding: 6px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header-banner">
+    <h1>BRIEF & TÉRMINOS DE SERVICIO</h1>
+    <p>Comisiones de Stream Overlays — Formulario de Requerimientos y Políticas</p>
+  </div>
+
+  <div class="form-body">
+    <!-- Reemplazar TU_ENDPOINT_DE_FORMSPREE con tu URL de Formspree / Web3Forms -->
+    <form action="[https://formspree.io/f/mzebannw](https://formspree.io/f/TU_ENDPOINT_DE_FORMSPREE)" method="POST">
+
+      <div class="instructions-box">
+        <strong>INSTRUCCIONES PARA EL CLIENTE:</strong> Por favor completa los campos del formulario. Este documento me permitirá entender tus necesidades exactas, definir el alcance del trabajo y enviarte la cotización formal de tu proyecto junto con los Términos y Condiciones aplicables.
+      </div>
+
+      <h2>1. Información General del Cliente</h2>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 40%;">Campo</th>
+            <th style="width: 60%;">Respuesta del Cliente</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Nombre / Alias de Streamer:</strong></td>
+            <td><input type="text" name="alias_streamer" placeholder="Tu nombre o alias" required></td>
+          </tr>
+          <tr>
+            <td><strong>Plataforma Principal:</strong></td>
+            <td><input type="text" name="plataforma" placeholder="Twitch, YouTube, Kick, etc." required></td>
+          </tr>
+          <tr>
+            <td><strong>Enlace a tu Canal:</strong></td>
+            <td><input type="url" name="url_canal" placeholder="[https://twitch.tv/tucanal](https://twitch.tv/tucanal)"></td>
+          </tr>
+          <tr>
+            <td><strong>Fecha Estimada de Entrega:</strong></td>
+            <td><input type="text" name="fecha_entrega" placeholder="DD/MM/AAAA o 'Sin prisa'"></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>2. Estructura Visual del Proyecto</h2>
+      <div class="checkbox-group">
+        <label class="checkbox-item">
+          <input type="radio" name="estructura_proyecto" value="Plano / Fijo (Single Scene)" required>
+          <div><strong>Overlay Plano / Fijo (Single Scene):</strong> Se entrega una sola imagen/video unificado donde todos los elementos están integrados en una única capa.</div>
+        </label>
+        <label class="checkbox-item" style="margin-top: 10px;">
+          <input type="radio" name="estructura_proyecto" value="Modular / Despiezado (Capas Separadas)">
+          <div><strong>Overlay Modular / Despiezado (Capas Separadas):</strong> Componentes independientes en PNG/WEBM transparentes (Marco, chatbox, barra de redes, alertas). <i>(Recomendado)</i>.</div>
+        </label>
+      </div>
+
+      <h2>3. Especificación de Pantallas y Elementos Requeridos</h2>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 32%;">Escena / Asset</th>
+            <th style="width: 15%; text-align: center;">Estático</th>
+            <th style="width: 15%; text-align: center;">Animado</th>
+            <th style="width: 38%;">Detalles Adicionales</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Starting Soon (Inicio)</strong></td>
+            <td style="text-align: center;"><input type="checkbox" name="asset_starting_estatico" value="Sí"></td>
+            <td style="text-align: center;"><input type="checkbox" name="asset_starting_animado" value="Sí"></td>
+            <td><input type="text" name="detalles_starting" placeholder="Ej: Con contador"></td>
+          </tr>
+          <tr>
+            <td><strong>Stream Ending (Final)</strong></td>
+            <td style="text-align: center;"><input type="checkbox" name="asset_ending_estatico" value="Sí"></td>
+            <td style="text-align: center;"><input type="checkbox" name="asset_ending_animado" value="Sí"></td>
+            <td><input type="text" name="detalles_ending" placeholder="Ej: Créditos de subs"></td>
+          </tr>
+          <tr>
+            <td><strong>Just Chatting</strong></td>
+            <td style="text-align: center;"><input type="checkbox" name="asset_chatting_estatico" value="Sí"></td>
+            <td style="text-align: center;"><input type="checkbox" name="asset_chatting_animado" value="Sí"></td>
+            <td><input type="text" name="detalles_chatting" placeholder="Ej: Cámara grande + Chatbox"></td>
+          </tr>
+          <tr>
+            <td><strong>Gameplay / Reacciones</strong></td>
+            <td style="text-align: center;"><input type="checkbox" name="asset_gameplay_estatico" value="Sí"></td>
+            <td style="text-align: center;"><input type="checkbox" name="asset_gameplay_animado" value="Sí"></td>
+            <td><input type="text" name="detalles_gameplay" placeholder="Ej: Marco 16:9 discreto"></td>
+          </tr>
+          <tr>
+            <td><strong>Cajas de Alertas / Etiquetas</strong></td>
+            <td style="text-align: center;"><input type="checkbox" name="asset_alertas_estatico" value="Sí"></td>
+            <td style="text-align: center;"><input type="checkbox" name="asset_alertas_animado" value="Sí"></td>
+            <td><input type="text" name="detalles_alertas" placeholder="Ej: Follow, Sub, Donación"></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>4. Concepto Visual y Estilo Artístico</h2>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 40%;">Criterio Visual</th>
+            <th style="width: 60%;">Descripción del Cliente</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Temática / Concepto Principal:</strong></td>
+            <td><input type="text" name="tematica" placeholder="Ej: Cyberpunk, Minimalista, Kawaii, Neón"></td>
+          </tr>
+          <tr>
+            <td><strong>Paleta de Colores Preferida:</strong></td>
+            <td><input type="text" name="colores" placeholder="Ej: Turquesa, Negro y Blanco"></td>
+          </tr>
+          <tr>
+            <td><strong>Enlaces o Referencias:</strong></td>
+            <td><textarea name="referencias" placeholder="Pega aquí links de Pinterest, imágenes o streams de referencia"></textarea></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>5. Servicios Adicionales (Opcional)</h2>
+      <div class="checkbox-group">
+        <label class="checkbox-item">
+          <input type="checkbox" name="addon_psd" value="Sí">
+          <div><strong>Archivos Fuente Editables (.PSD / .AE):</strong> Deseo incluir los archivos editables originales (+20% a +30% costo adicional).</div>
+        </label>
+        <label class="checkbox-item" style="margin-top: 8px;">
+          <input type="checkbox" name="addon_obs" value="Sí">
+          <div><strong>Servicio de Montaje en OBS / StreamElements:</strong> Deseo contratar la maquetación e integración técnica en mi software de transmisión.</div>
+        </label>
+      </div>
+
+      <h2>6. Términos y Condiciones del Servicio (T&C)</h2>
+      <div class="terms-box">
+        <ul class="terms-list">
+          <li><strong>Licencia Comercial:</strong> Uso personal exclusivo para transmisiones. Prohibida la reventa o entrenamiento de IA.</li>
+          <li><strong>Pagos y Cancelaciones:</strong> 100% o 50% inicio / 50% contra-entrega. Reembolso máx. 50% si el diseño ya inició.</li>
+          <li><strong>Archivos Editables:</strong> Cotización estándar incluye solo exportados (PNG/WEBM). Editables tienen costo extra.</li>
+          <li><strong>Soporte OBS:</strong> No incluye maquetación en OBS salvo que se contrate el servicio adicional.</li>
+          <li><strong>Revisiones:</strong> Hasta 2 rondas de revisiones menores en boceto.</li>
+        </ul>
+      </div>
+
+      <button type="submit" class="submit-btn">Enviar Brief de Comisión</button>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
